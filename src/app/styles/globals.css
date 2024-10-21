@@ -1,0 +1,89 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  background: radial-gradient(
+      43.93% 43.55% at 50% 73.19%,
+      rgba(53, 0, 143, 0.47) 0,
+      rgba(130, 29, 209, 0) 100%
+    ),
+    radial-gradient(
+      61.57% 104.78% at 98.23% 3.96%,
+      #18ab76 0,
+      rgba(24, 171, 118, 0.849) 26.72%,
+      rgba(24, 171, 118, 0) 100%
+    ),
+    radial-gradient(
+      48.99% 67.01% at 91.46% 94.04%,
+      #2a15c2 0,
+      rgba(52, 29, 228, 0) 100%
+    ),
+    radial-gradient(
+      79.49% 96.54% at 19.27% 7.71%,
+      #610769 0,
+      rgba(90, 6, 98, 0.781) 24.58%,
+      rgba(65, 2, 71, 0) 100%
+    ),
+    radial-gradient(
+      54.58% 107.94% at 17.15% 83.25%,
+      #18185f 42.84%,
+      rgba(30, 30, 65, 0) 100%
+    ),
+    #000023;
+  background-image: radial-gradient(
+      43.93% 43.55% at 50% 73.19%,
+      rgba(53, 0, 143, 0.47) 0px,
+      rgba(130, 29, 209, 0) 100%
+    ),
+    radial-gradient(
+      61.57% 104.78% at 98.23% 3.96%,
+      rgb(24, 171, 118) 0px,
+      rgba(24, 171, 118, 0.847) 26.72%,
+      rgba(24, 171, 118, 0) 100%
+    ),
+    radial-gradient(
+      48.99% 67.01% at 91.46% 94.04%,
+      rgb(42, 21, 194) 0px,
+      rgba(52, 29, 228, 0) 100%
+    ),
+    radial-gradient(
+      79.49% 96.54% at 19.27% 7.71%,
+      rgb(97, 7, 105) 0px,
+      rgba(90, 6, 98, 0.78) 24.58%,
+      rgba(65, 2, 71, 0) 100%
+    ),
+    radial-gradient(
+      54.58% 107.94% at 17.15% 83.25%,
+      rgb(24, 24, 95) 42.84%,
+      rgba(30, 30, 65, 0) 100%
+    ),
+    initial;
+
+  background-color: rgb(0, 0, 35);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
